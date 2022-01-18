@@ -7,5 +7,5 @@ if (numero == 0)  {
         factorial = factorial*i;
     }
 }
-
-console.log("El resultado factorial  es " + factorial)
+alert("El resultado  de " + numero +"! " + "es " + factorial) 
+console.log("El resultado  de " + numero +"! " + "es " + factorial)
