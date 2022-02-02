@@ -37,5 +37,5 @@ function solicitarProducto(i){
 
     return precio*cantidad;
 
-    carritoProductos.push(producto);
+    
 }
