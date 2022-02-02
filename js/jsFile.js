@@ -1,6 +1,8 @@
-    // Simulador de n productos
+// Simulador de n productos
 let subTotal = 0;
 let precioTotal = 0;
+
+let carritoProductos = [];
 
 let cantidadProductos = parseInt(prompt("Ingrese la cantidad de productos que va a llevar :"))
 if (cantidadProductos>0) {
@@ -10,7 +12,11 @@ if (cantidadProductos>0) {
         precioTotal += subTotal;
     }
         
-    alert("Su total es de " + precioTotal)
+    alert("Su total por " + carritoProductos.length + " productos  es de " + precioTotal)
+    alert("Está llevando los siguientes productos : ")
+    for (i=0;i<carritoProductos.length;i++){
+        console.log(carritoProductos[i])
+    }
     alert("Gracias por su preferencia")
 }
 else {
@@ -22,9 +28,14 @@ else {
 function solicitarProducto(i){
     
     let producto = prompt("Ingrese el producto " + i + " :")
-    let cantidad = prompt("Ingrese la cantidad del producto " + i + " :")
-    let precio   = prompt("Ingrese el precio del producto " + i + " :")
+    let cantidad = parseInt(prompt("Ingrese la cantidad de " + producto + " que va a llevar :"))
+    let precio   = parseInt(prompt("Ingrese el precio unitario de "+ producto  + " :"))
 
     console.log("Ha añadido a su compra " + cantidad + " unidades del producto " + producto.toUpperCase() + " con precio unitario de " + precio + " con subtotal de " + cantidad*precio)
+    
+    carritoProductos.push(producto); //Arreglo con los productos
+
     return precio*cantidad;
+
+    carritoProductos.push(producto);
 }
