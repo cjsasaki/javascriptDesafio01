@@ -4,6 +4,10 @@ let precioTotal = 0;
 
 let carritoProductos = [];
 
+const cart = []
+
+const carritoCompras = []; 
+
 let cantidadProductos = parseInt(prompt("Ingrese la cantidad de productos que va a llevar :"))
 if (cantidadProductos>0) {
 
