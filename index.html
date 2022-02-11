@@ -10,9 +10,43 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Desafio : Interactuar con HTML</h1>
+    <h1>Desafio : Incorporar Eventos</h1>
 
-    <div id="productosAgregados">Prueba</div>
+    
+    <div id="cantidadProductos">
+        
+        </br>
+        <div>Cantidad de Kilos de Arroz</div>
+        <div>S/4.0</div>
+        <div><input type='number' min="1" id="productos__Arroz__Cantidad" name='cantidadArroz'></div>
+        </br>
+        <div><button type="button" id="productos__Arroz__Agregar">Agregar</button></div>
+        </br>
+
+
+        <div>Cantidad de Litros de Leche</div>
+        <div>S/3.5</div>
+        <div><input type='number' min="1" id="productos__Leche__Cantidad" name='cantidadLeche'></div>
+        </br>
+        <div><button type="button" id="productos__Leche__Agregar">Agregar</button></div>
+        </br>
+
+        <div>Cantidad de Kilos de Azucar</div>
+        <div>S/3.0</div>
+        <div><input type='number' min="1" id="productos__Azucar__Cantidad" name='cantidadAzucar'></div>
+        </br>
+        <div><button type="button" id="productos__Azucar__Agregar">Agregar</button></div>
+        </br>
+
+   
+        </br>
+        <div><button type="submit" id="productos__MostrarTotal">Mostrar Total</button></div>
+        
+        <div id="productosAgregados"></div>
+    </div>
+
+
+    
     <h2></h2>
     <script src="./js/data.js"></script>
     <script src="./js/primeraEntrega.js"></script>
