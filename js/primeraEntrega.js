@@ -1,4 +1,4 @@
-import  products from 'data.js'
+//Import  products from 'data.js'
 console.log(products)
 const cart =  []
 
